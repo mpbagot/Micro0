@@ -114,7 +114,7 @@ module door_panel() {
 }
 
 module tophat_side_panel() {
-    square([EXTRUSION_LEN+5, 100-8]);
+    square([EXTRUSION_LEN+5, TOPHAT_HEIGHT-8]);
 }
 
 module tophat_top_panel() {

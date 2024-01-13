@@ -10,3 +10,5 @@ BED_Y = 80;
 
 MAIN = "#202020";
 ACCENT = "red";
+
+TOPHAT_HEIGHT = 100;

@@ -3,8 +3,6 @@ use <panels.scad>;
 
 include <params.scad>;
 
-TOPHAT_HEIGHT = 100;
-
 module tophat() {
     // Square section
     translate([0, 0, TOPHAT_HEIGHT-10]) union() {
