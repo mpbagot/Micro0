@@ -361,9 +361,9 @@ module _left_panel_clips() {
     
     translate([0, -2.6, 0]) scale([1, -1, 1]) rotate([0, -90, 180]) side_bottom_clip();
     
-    translate([0, EXTRUSION_LEN+22.6, EXTRUSION_LEN+43]) scale([1, -1, 1]) rotate([0, 90, 0]) side_top_clip();
+    translate([0, EXTRUSION_LEN+22.6, EXTRUSION_LEN+36]) scale([1, -1, 1]) rotate([0, 90, 0]) side_top_clip();
     
-    translate([0, -2.6, EXTRUSION_LEN+43]) rotate([0, 90, 0]) side_top_clip();
+    translate([0, -2.6, EXTRUSION_LEN+36]) rotate([0, 90, 0]) side_top_clip();
     
 }
 
@@ -372,18 +372,18 @@ module _right_panel_clips() {
     
     translate([0, -2.6, 0]) scale([-1, -1, 1]) rotate([0, -90, 180]) bottom_hinge_side();
     
-    translate([0, EXTRUSION_LEN+22.6, EXTRUSION_LEN+43]) scale([-1, -1, 1]) rotate([0, 90, 0]) side_top_clip();
+    translate([0, EXTRUSION_LEN+22.6, EXTRUSION_LEN+36]) scale([-1, -1, 1]) rotate([0, 90, 0]) side_top_clip();
     
-    translate([0, -2.6, EXTRUSION_LEN+43]) rotate([0, 90, 180]) top_hinge_side();
+    translate([0, -2.6, EXTRUSION_LEN+36]) rotate([0, 90, 180]) top_hinge_side();
     
 }
 
 module _door_panel_clips() {
-    translate([-2.6, 0, EXTRUSION_LEN+43]) rotate([0, 90, 90]) top_left_door();
+    translate([-2.6, 0, EXTRUSION_LEN+36]) rotate([0, 90, 90]) top_left_door();
     
     translate([-2.6, 0, 0]) rotate([-90, -90, 0]) bottom_left_door();
     
-    translate([EXTRUSION_LEN+20+2.6, 0, EXTRUSION_LEN+43]) rotate([0, 90, 90]) top_hinge_door();
+    translate([EXTRUSION_LEN+20+2.6, 0, EXTRUSION_LEN+36]) rotate([0, 90, 90]) top_hinge_door();
     
     translate([EXTRUSION_LEN+20+2.6, 0, 0]) rotate([0, -90, -90]) bottom_hinge_door();
 }

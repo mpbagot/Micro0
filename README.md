@@ -1,5 +1,7 @@
 # Micro 0, a 1010 Makerbeam-based Voron 0 printer
 
+## Note: This is a variation of the main printer which uses 4mm belts. The gantry (and thus the entire printer) is around 7mm shorter than the 6mm version.
+
 ![](Images/SCAD_Render.png)
 
 This is an attempt at producing the smallest practically-sized Voron 0 style printer that could be made. This makes use of 10x10mm Makerbeam extrusions, in the standard 150mm lengths, alongside the typical NEMA14's of a Voron 0.

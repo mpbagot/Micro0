@@ -12,21 +12,20 @@ module bearing_stack() {
     translate([0, 0, 0.5]) cylinder(h=0.8, r=4.05);
     translate([0, 0, 1.3]) cylinder(h=2.2, r=3.5);
     
-    // Middle shims
-    for (i=[0:3]) {
-        translate([0, 0, 3.5+0.5*i]) cylinder(h=0.5, r=3);
-    }
-    
     // Top bearing
-    translate([0, 0, 5.5]) cylinder(h=2.2, r=3.5);
-    translate([0, 0, 7.7]) cylinder(h=0.8, r=4.05);
+    translate([0, 0, 3.5]) cylinder(h=2.2, r=3.5);
+    translate([0, 0, 5.7]) cylinder(h=0.8, r=4.05);
     // Top shim
-    translate([0, 0, 8.5]) cylinder(h=0.5, r=3);
+    translate([0, 0, 6.5]) cylinder(h=0.5, r=3);
     }
 }
 
 module spacer() {
-    color("orange") cylinder(r=3, h=9);
+    difference() {
+        color("orange") cylinder(r=3, h=7);
+        
+        translate([0, 0, -1]) cylinder(r=1.7, h=50);
+    }
 }
 
 // Generate a rail of given length, with the carriage at percentage 'pos' along it's length, where pos is between 0 and 1

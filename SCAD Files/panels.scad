@@ -74,7 +74,7 @@ module base_panel() {
 }
 
 module back_panel_top() {
-    square([EXTRUSION_LEN+5, 43+9.75]);
+    square([EXTRUSION_LEN+5, 36+9.75]);
 }
 
 module back_panel_bottom() {
@@ -106,11 +106,11 @@ module back_panel_bottom() {
 }
 
 module side_panel() {
-    square([EXTRUSION_LEN+5, EXTRUSION_LEN+43-8-8]);
+    square([EXTRUSION_LEN+5, EXTRUSION_LEN+36-8-8]);
 }
 
 module door_panel() {
-    square([EXTRUSION_LEN+5, EXTRUSION_LEN+43-8]);
+    square([EXTRUSION_LEN+5, EXTRUSION_LEN+36-8]);
 }
 
 module tophat_side_panel() {
