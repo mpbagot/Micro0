@@ -294,7 +294,7 @@ module rr_foot() {
             translate([15.9, 5, FEET_HEIGHT]) cube([2.4, 5, 1.2]);
             
             // Bowden collet piece
-            translate([4.5, 4.5, FEET_HEIGHT/2]) rotate([90, 0, -45]) cylinder(r=6, h=10);
+            translate([4.5+4.83, 4.5+1.294, FEET_HEIGHT/2]) rotate([90, 0, -75]) cylinder(r=6, h=15);
         }
         
         // Base plate cut
@@ -311,8 +311,8 @@ module rr_foot() {
         translate([17, 17, -0.01]) cylinder(r=3, h=3);
         
         // Bowden collet hole
-        translate([1.65, 1.65, FEET_HEIGHT/2]) rotate([90, 0, -45]) cylinder(r=4.2, h=6);
-        //translate([11, 11, FEET_HEIGHT/2]) rotate([90, 0, -45]) cylinder(r=2.4, h=60);
+        translate([0.606, 3.4567, FEET_HEIGHT/2]) rotate([90, 0, -75]) cylinder(r=4.4, h=6);
+        translate([0.337, 3.3845, FEET_HEIGHT/2]) rotate([90, 0, 105]) cylinder(r=2.4, h=60);
         //translate([23, 10.3, FEET_HEIGHT/2]) rotate([0, -90, 0]) cylinder(r=2.4, h=13.7);
         
         // Thread insert holes
