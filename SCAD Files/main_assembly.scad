@@ -2,6 +2,7 @@ use <frame.scad>;
 use <z_axis.scad>;
 use <gantry.scad>;
 use <skirts_feet.scad>;
+//use <honeycomb_skirts.scad>;
 use <panels.scad>;
 use <panel_clips.scad>;
 use <door.scad>;
