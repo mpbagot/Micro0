@@ -101,7 +101,7 @@ module r_idler() {
         translate([5, 15, 31]) cylinder(r=3, h=100);
         
         // top extrusion hole (M3)
-        translate([5, -0.01, 38]) rotate([-90, 0, 0]) cylinder(r=1.4, h=20);
+        translate([5, -0.01, 38]) rotate([-90, 0, 0]) cylinder(r=1.7, h=20);
         
         // Extrusion spot
         translate([-0.01, 10, 33]) cube([11, 24, 12]);
@@ -119,8 +119,8 @@ module r_idler() {
         }
         
         // Bolt holes
-        translate([5, 5, -5]) cylinder(r=1.4, h=100);
-        translate([5, 15, -5]) cylinder(r=1.4, h=100);
+        translate([5, 5, -5]) cylinder(r=1.7, h=100);
+        translate([5, 15, -5]) cylinder(r=1.7, h=100);
         
         // Bearing stack space
         translate([-1, -1, 8.001]) cube([12, 11, 9]);
@@ -138,7 +138,7 @@ module r_idler() {
 module x_axis() {
     translate([0, MGN5_CARR_LEN-8, -2]) rotate([0, 90, 0]) extrusion(EXTRUSION_LEN);
     
-    x_pos = 0.5;
+    x_pos = 0.185;
     
     // Rail
     rail_len = 120;
@@ -210,8 +210,6 @@ module l_xy_joint() {
         translate([-11 + 7 + 1.5, MGN5_CARR_LEN - 10 + 2.5 - 7 - 1, 39]) cylinder(r=3, h=10);
         
         // Extrusion top holes
-        translate([-11 + 7 + 1.5, MGN5_CARR_LEN - 5, -10]) cylinder(r=1.7, h=100);
-        translate([-11 + 7 + 1.5, MGN5_CARR_LEN - 5, 39-.5]) cylinder(r=3, h=10);
         translate([-11 + 7 + 1.5 + 8, MGN5_CARR_LEN - 5, -10]) cylinder(r=1.7, h=100);
         translate([-11 + 7 + 1.5 + 8, MGN5_CARR_LEN - 5, 39-.5]) cylinder(r=3, h=10);
     }
@@ -390,4 +388,4 @@ module carriage() {
 gantry();
 
 //$fn = 80;
-//l_xy_joint();
+//r_xy_joint();
