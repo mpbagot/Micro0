@@ -18,7 +18,7 @@ That said, any suggestions or improvements are welcome. All issues and pull requ
 
 ## Hardware/BOM
 
-This printer requires mostly similar hardware to a standard V0, though many pieces are scaled down. Bolts are on a best-fit basis, and exact counts aren't known. Test what works, generally opting for the same, or slightly shorter than stock.
+This printer requires mostly similar hardware to a standard V0, though many pieces are scaled down. Bolts are on a best-fit basis, and exact counts aren't known. For this 4mm belt gantry, most bolts through the drive blocks and idlers are 25mm or 30mm. 28mm seems best for motors, but 25mm+ should work. Test what works, generally opting for the same, or slightly shorter than stock.
 
 - The standard F623-RS flanged bearings are replaced by F683zz bearings (3x7x3mm). The standard bearings are too large in diameter and interfere with panels.
 - The X and Y rails are replaced by [MGN5 rails](https://www.aliexpress.com/item/1005004714467036.html). The X must be 120mm, whilst the Y should both be 100mm. The Z rails are still MGN7H rails, but should be cut to 115-120mm in length.
