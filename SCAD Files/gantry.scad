@@ -101,7 +101,7 @@ module r_idler() {
         translate([5, 15, 24]) cylinder(r=3, h=100);
         
         // top extrusion hole (M3)
-        translate([5, -0.01, 31]) rotate([-90, 0, 0]) cylinder(r=1.4, h=20);
+        translate([5, -0.01, 31]) rotate([-90, 0, 0]) cylinder(r=1.7, h=20);
         
         // Extrusion spot
         translate([-0.01, 10, 26]) cube([11, 24, 12]);
@@ -210,8 +210,6 @@ module l_xy_joint() {
         translate([-11 + 7 + 1.5, MGN5_CARR_LEN - 10 + 2.5 - 7 - 1, 33]) cylinder(r=3, h=10);
         
         // Extrusion top holes
-        translate([-11 + 7 + 1.5, MGN5_CARR_LEN - 5, -10]) cylinder(r=1.7, h=100);
-        translate([-11 + 7 + 1.5, MGN5_CARR_LEN - 5, 33-.5]) cylinder(r=3, h=10);
         translate([-11 + 7 + 1.5 + 8, MGN5_CARR_LEN - 5, -10]) cylinder(r=1.7, h=100);
         translate([-11 + 7 + 1.5 + 8, MGN5_CARR_LEN - 5, 33-.5]) cylinder(r=3, h=10);
     }
